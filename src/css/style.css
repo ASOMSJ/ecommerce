@@ -34,10 +34,12 @@ body {
     padding: 6px 16px 7px;
     transition: all 0.3s ease;
 }
-.custom-form-control:focus{
+
+.custom-form-control:focus {
     border-color: #c2101e;
     box-shadow: 0 0 2px 0 #c2101e;
 }
+
 .custom-btn:hover {
     background-color: #d4d4d4;
     border: 1px solid #8c8c8c;
@@ -65,39 +67,44 @@ body {
     padding: 5px 15px 7px;
     height: 38px;
     width: 65px;
-     border-radius: 0;
-     font-weight: 700;
-     font-size: 14px;
-     color: #fff;
-     transition: all 0.3s ease;
+    border-radius: 0;
+    font-weight: 700;
+    font-size: 14px;
+    color: #fff;
+    transition: all 0.3s ease;
 }
+
 .search-btn:hover,
 .search-btn:active,
 .search-btn:focus,
 .search-btn:active:focus,
-.search-btn:active:hover{
+.search-btn:active:hover {
     background-color: #c2101e;
     border-color: #c2101e;
     color: #fff;
 }
 
-.custom-navbar .navbar-nav li a.nav-link{
+.custom-navbar .navbar-nav li a.nav-link {
     color: #555555;
     font-size: 14px;
     padding: 15px;
 }
-.custom-navbar .navbar-nav li.active a.nav-link{
+
+.custom-navbar .navbar-nav li.active a.nav-link {
     color: #ff3956;
     font-weight: 700;
     border-bottom: 1px solid #ff3956;
 }
-.custom-navbar .navbar-nav li.active:hover a.nav-link{
-background-color: #e7e7e7;
+
+.custom-navbar .navbar-nav li.active:hover a.nav-link {
+    background-color: #e7e7e7;
 }
-.custom-dropdown-menu li a:hover{
+
+.custom-dropdown-menu li a:hover {
     background-color: #ffe7ea;
 }
-.custom-navbar .btn-icon{
+
+.custom-navbar .btn-icon {
     padding: 5px 10px;
     color: #777;
     border: 1px solid #ddd;
@@ -106,11 +113,95 @@ background-color: #e7e7e7;
     font-size: 14px;
     margin-right: 15px;
 }
+
 /* قسم عارض الشرائح */
-#carousel-featured{
+#carousel-featured {
     background-color: #F7F8F3;
     height: 400px;
+    padding-top: 25px;
 }
-#carousel-featured .carousel-item img{
+
+#carousel-featured .carousel-item img {
     height: 375px;
+}
+
+#carousel-featured .product-details {
+    border: 1px solid #dddddb;
+    padding: 20px;
+    position: relative;
+    top: 50px;
+    height: 200px;
+    background-color: #F7F8F3;
+}
+
+#carousel-featured .product-details h1 {
+    font-weight: 700;
+    font-size: 175%;
+    margin-top: 18px;
+}
+
+#carousel-featured .product-details .product-category {
+    border: 1px solid #dddddb;
+    padding: 10px;
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    background-color: #F7F8F3;
+
+}
+
+.custom-btn-outline-warning {
+    background-color: transparent;
+    border-color: #f8ad47;
+    color: #f8ad47;
+}
+
+.custom-btn-outline-warning:hover,
+.custom-btn-outline-warning:active,
+.custom-btn-outline-warning:focus,
+.custom-btn-outline-warning:active:focus,
+.custom-btn-outline-warning:active:hover {
+    border-color: #b86d07;
+    color: #b86d07;
+}
+
+.sale {
+    background-color: #53ccd7;
+    color: #fff;
+    font-weight: bold;
+    position: absolute;
+
+}
+
+.sale.large {
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    left: -15px;
+    top: -15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 130%;
+    padding: 35px;
+    line-height: 90%;
+    flex-direction: column;
+    transform: rotate(-25deg);
+}
+
+.custom-carousel-indicators {
+    top: 235px;
+    right: 41%;
+}
+
+.custom-carousel-indicators-primary {
+    height: 70px !important;
+    width: 70px !important;
+    opacity: 1 !important;
+    border: 2px solid #dddddb !important;
+    margin: 0 !important;
+    margin-left: 5px !important;
+}
+.custom-carousel-indicators-primary.active{
+    border-color: #f8ad47 !important;
 }
