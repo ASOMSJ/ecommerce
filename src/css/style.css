@@ -205,3 +205,8 @@ body {
 .custom-carousel-indicators-primary.active{
     border-color: #f8ad47 !important;
 }
+#carousel-featured .carousel-control-prev .fa-chevron-right,
+#carousel-featured .carousel-control-next .fa-chevron-left{
+color: #868686;
+font-size: 38px;
+}
