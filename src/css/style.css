@@ -16,7 +16,7 @@ body {
     line-height: 1.5;
     color: black;
 }
-
+/* قسم البار العلوي */
 .custom-navbar {
     border-bottom: 3px solid #EEF0EA;
     width: 100%;
@@ -231,5 +231,4 @@ font-size: 38px;
 }
 #store-features .feature+.feature{
     border-right: 1px solid #eef0ea;
-    
 }
