@@ -9,8 +9,10 @@ document.querySelectorAll('[data-bs-toggle="tooltip"]').forEach(item => new boot
 
 
 var buttons = document.querySelectorAll('.add-to-cart-btn');
-buttons.forEach(function(button) {
-    button.addEventListener('click', function() {
+buttons.forEach(function (button) {
+    button.addEventListener('click', function () {
         alert('أضيف المنتج الى عربة الشراء');
     });
 });
+
+document.getElementById("copyright").innerHTML = "جميع الحقوق محفوظة سنة " + new Date().getFullYear();
