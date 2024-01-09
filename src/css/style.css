@@ -474,7 +474,22 @@ body {
 }
 
 
-@media (max-width: 767.98px) {}
+@media (max-width: 767.98px) {
+    #carousel-featured{
+        padding: 25px;
+    }
+    #carousel-featured,
+    #carousel-featured .product-details{
+        height: auto;
+    }
+    #carousel-featured .product-details{
+        top: -2px;
+        text-align: center;
+    }
+    #carousel-featured .carousel-item img{
+        height: 250px;
+    }
+}
 
 
 @media (max-width: 991.98px) {
@@ -524,6 +539,9 @@ body {
         border-top: 1px solid #eee;
         margin-top: 15px;
         padding-top: 8px;
+    }
+    #carousel-featured .carousel-indicators{
+       margin-right: 4%;
     }
 }
 
