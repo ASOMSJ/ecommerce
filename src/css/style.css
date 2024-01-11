@@ -461,36 +461,20 @@ body {
 }
 
 
+@media (max-width: 1399.98px) {}
 
-@media (max-width: 575.98px) {
-    .inline-form .custom-form-control {
-        width: 80% !important;
-
+@media (max-width: 1199.98px) {
+    .custom-navbar .navbar-nav li a.nav-link {
+        padding: 7px;
     }
 
-    .inline-form .search-btn {
-        width: 20% !important;
-    }
 }
 
-
-@media (max-width: 767.98px) {
-    #carousel-featured{
-        padding: 25px;
-    }
-    #carousel-featured,
-    #carousel-featured .product-details{
-        height: auto;
-    }
-    #carousel-featured .product-details{
-        top: -2px;
-        text-align: center;
-    }
-    #carousel-featured .carousel-item img{
-        height: 250px;
+@media (min-width: 991.99px) and (max-width: 1199.98px) {
+    #carousel-featured .carousel-indicators {
+        margin-right: 11%;
     }
 }
-
 
 @media (max-width: 991.98px) {
     .custom-navbar {
@@ -540,17 +524,65 @@ body {
         margin-top: 15px;
         padding-top: 8px;
     }
-    #carousel-featured .carousel-indicators{
-       margin-right: 4%;
+
+    #carousel-featured .carousel-indicators {
+        margin-right: 2%;
+    }
+
+    .overlay {
+        display: none;
+    }
+
+    .add-to-cart-btn {
+        color: #868686;
+        border-color: #868686;
+        font-weight: 400;
+        margin: 8px auto 0;
+    }
+
+    .custom-thumbnail img {
+        height: 200px;
+    }
+
+    #row-brands .carousel-inner img {
+        width: 200px !important;
+        height: auto !important;
     }
 }
 
 
-@media (max-width: 1199.98px) {
-    .custom-navbar .navbar-nav li a.nav-link {
-        padding: 7px;
+@media (max-width: 767.98px) {
+    #carousel-featured {
+        padding: 25px;
+    }
+
+    #carousel-featured,
+    #carousel-featured .product-details {
+        height: auto;
+    }
+
+    #carousel-featured .product-details {
+        top: -2px;
+        text-align: center;
+    }
+
+    #carousel-featured .carousel-item img {
+        height: 250px;
+    }
+
+    .custom-thumbnail img {
+        height: 250px;
+        margin: auto;
     }
 }
 
+@media (max-width: 575.98px) {
+    .inline-form .custom-form-control {
+        width: 80% !important;
 
-@media (max-width: 1399.98px) {}
+    }
+
+    .inline-form .search-btn {
+        width: 20% !important;
+    }
+}
