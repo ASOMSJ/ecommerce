@@ -548,6 +548,15 @@ body {
         width: 200px !important;
         height: auto !important;
     }
+    #copyright,
+    #social-icon{
+        width: 100%;
+        text-align: center;
+    }
+    #social-icon{
+        font-size: 150%;
+        margin-top: 10px;
+    }
 }
 
 
@@ -574,6 +583,19 @@ body {
         height: 250px;
         margin: auto;
     }
+    #brand-logo img{
+        max-width: 50px;
+        max-height: 50px;
+        margin: 5px 24px 5px 23px;
+    }
+    #footer-nav .footer-logo{
+        margin-bottom: 30px;
+    }
+    #footer-nav form{
+        width: 100%;
+        max-width: 100%;
+        padding: 0 20px;
+    }
 }
 
 @media (max-width: 575.98px) {
@@ -584,5 +606,8 @@ body {
 
     .inline-form .search-btn {
         width: 20% !important;
+    }
+    #brand-logo img{
+        margin: 5px 15px;
     }
 }
