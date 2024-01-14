@@ -461,6 +461,29 @@ body {
 }
 
 
+/* 
+----------Product Page---------
+ */
+
+.custom-breadcrumb{
+    padding: 25px 0;
+}
+.custom-breadcrumb a{
+    color: #555;
+    text-decoration: none;
+}
+.custom-breadcrumb a:hover{
+    color: #f8ad47;
+}
+.custom-breadcrumb>li::before{
+    color: #f8ad47 !important;
+}
+.custom-breadcrumb .active{
+    color: #bfbfbf;
+}
+
+
+
 @media (max-width: 1399.98px) {}
 
 @media (max-width: 1199.98px) {
@@ -558,6 +581,7 @@ body {
         margin-top: 10px;
     }
 }
+
 
 
 @media (max-width: 767.98px) {
