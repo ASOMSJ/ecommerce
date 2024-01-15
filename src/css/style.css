@@ -481,7 +481,15 @@ body {
 .custom-breadcrumb .active{
     color: #bfbfbf;
 }
-
+#carosel-product-images .carousel-indicators{
+    top: 92%;
+    right: 0; 
+}
+#carosel-product-images .carousel-item img{
+    width: 100%;
+    height: auto;
+    border: 1px solid #ebebeb;
+}
 
 
 @media (max-width: 1399.98px) {}
@@ -581,7 +589,6 @@ body {
         margin-top: 10px;
     }
 }
-
 
 
 @media (max-width: 767.98px) {
