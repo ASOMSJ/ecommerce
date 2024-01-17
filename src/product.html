@@ -114,9 +114,10 @@
         </div>
         <!-- نهاية القائمة الفرعية -->
 
-        <div class="container">
-            <div class="row">
-                <div class="col-5 offset-1">
+        <div class="container borders-between">
+            <!-- قسم الصور وتفاصيل المنتج -->
+            <div class="row mb-5 ">
+                <div class="col-lg-5 col-md-9 offset-md-2 offset-lg-1 product-img"> 
                     <div id="carosel-product-images" class=" carousel slide" data-bs-ride="carousel">
                         <div class="carousel-inner">
                             <div class="carousel-item active">
@@ -134,8 +135,8 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-5">
-                    <form id="form-product-selection">
+                <div class="col-lg-5">
+                    <form id="form-product-selection" class="borders-between">
                         <div class="row">
                             <div class="product-category">
                                 ملابس رجالي
@@ -146,107 +147,352 @@
                                     35$
                                 </div>
                             </div>
-                            <div class="row">
-                                <p class="product-description">
-                                    حقق اقصى اداء اثناء تمارينك مع قميص تك فت المميز الذي يمنحك الراحة ويدعم عضلاتك
+                        </div>
+                        <div class="row">
+                            <p class="product-description">
+                                حقق اقصى اداء اثناء تمارينك مع قميص تك فت المميز الذي يمنحك الراحة ويدعم عضلاتك
+                            </p>
+                        </div>
+                        <div class="row brand-and-ratting">
+                            <div class="col-6">
+                                <div class="brand">
+                                    الماركة :
+                                    <img src="./images/adidas_small.png" alt="adidas">
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="rating">
+                                    <i class="fa-solid fa-star active"></i>
+                                    <i class="fa-solid fa-star active"></i>
+                                    <i class="fa-solid fa-star active"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row size-and-color">
+                            <div class="col-md-6">
+                                المقاسات المتاحة :
+                                <br>
+                                <div class="product-option size-option">
+                                    <label>
+                                        S
+                                        <input type="radio" name="size" value="sm">
+                                    </label>
+                                </div>
+                                <div class="product-option size-option active">
+                                    <label>
+                                        M
+                                        <input type="radio" name="size" value="m" checked>
+                                    </label>
+                                </div>
+                                <div class="product-option size-option">
+                                    <label>
+                                        L
+                                        <input type="radio" name="size" value="l">
+                                    </label>
+                                </div>
+                                <div class="product-option size-option">
+                                    <label>
+                                        XL
+                                        <input type="radio" name="size" value="xl">
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                الالوان المتاحة :
+                                <br>
+                                <div class="product-option color-option" style="background-color: orange;">
+                                    <label>&nbsp
+                                        <input type="radio" name="color" value="orang">
+                                    </label>
+                                </div>
+                                <div class="product-option color-option" style="background-color: red;">
+                                    <label>&nbsp
+                                        <input type="radio" name="color" value="red">
+                                    </label>
+                                </div>
+                                <div class="product-option color-option" style="background-color: purple;">
+                                    <label>&nbsp
+                                        <input type="radio" name="color" value="purple">
+                                    </label>
+                                </div>
+                                <div class="product-option color-option active" style="background-color: blue;">
+                                    <label>&nbsp
+                                        <input type="radio" name="color" value="blue" checked>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-qounatity">
+                            <div>
+                                العدد المطلوب :
+                                <select name="qounatity" class="custom-form-control">
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div>
+                            <button type="submit" class="btn custom-btn-warning custom-btn-with-icon">
+                                <span>
+                                    إضافة لعربة الشراء
+                                    <i class="fas fa-cart-plus"></i>
+                                </span>
+                            </button>
+
+                        </div>
+
+                    </form>
+                </div>
+            </div>
+            <!--نهاية قسم الصور وتفاصيل المنتج -->
+            <!-- قسم وصف المنتج -->
+            <div class="more-description">
+                <h3 class="heading heading-with-border-bottom heading-inline">
+                    وصف المنتج
+                </h3>
+                <p>
+                    حقق اقصى اداء اثناء تمارينك الرياضية مع قميص فيت بت كت بينز الرياضي الذي يمنحك الراحة
+                </p>
+                <ul>
+                    <li>درزات ناعمة تخفف من الاحتكاك</li>
+                    <li>مصنع من 88% بولستر </li>
+                    <li>مستورد</li>
+                </ul>
+            </div>
+            <!--  نهاية قسم وصف المنتج -->
+            <!-- قسم التعليقات المنتج -->
+            <div class="row">
+                <div class="comments borders-between">
+                    <h3 class="heading heading-with-border-bottom heading-inline">
+                        التعليقات على المنتج
+                    </h3>
+                    <div class="row">
+                        <div class="comment d-flex mb-3">
+                            <img src="./images/reviewer_1.jpg" alt="reviewer_1">
+                            <div>
+                                <h4>
+                                    محمد هاني
+                                </h4>
+                                <div class="rating">
+                                    <i class="fa-solid fa-star active"></i>
+                                    <i class="fa-solid fa-star active"></i>
+                                    <i class="fa-solid fa-star active"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                </div>
+                                <p>
+                                    منتج جيد جدا انصح بأقتنائه لانه مصنوع من قماش الحرير
                                 </p>
                             </div>
-                            <div class="row brand-and-ratting">
-                                <div class="col-6">
-                                    <div class="brand">
-                                        الماركة :
-                                        <img src="./images/adidas_small.png" alt="adidas">
-                                    </div>
-                                </div>
-                                <div class="col-6">
-                                    <div class="rating">
-                                        <i class="fa-solid fa-star active"></i>
-                                        <i class="fa-solid fa-star active"></i>
-                                        <i class="fa-solid fa-star active"></i>
-                                        <i class="fa-regular fa-star"></i>
-                                        <i class="fa-regular fa-star"></i>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="row size-and-color">
-                                <div class="col-md-6">
-                                    المقاسات المتاحة :
-                                    <br>
-                                    <div class="product-option size-option">
-                                        <label>
-                                            S
-                                            <input type="radio" name="size" value="sm">
-                                        </label>
-                                    </div>
-                                    <div class="product-option size-option active">
-                                        <label>
-                                            M
-                                            <input type="radio" name="size" value="m" checked>
-                                        </label>
-                                    </div>
-                                    <div class="product-option size-option">
-                                        <label>
-                                            L
-                                            <input type="radio" name="size" value="l">
-                                        </label>
-                                    </div>
-                                    <div class="product-option size-option">
-                                        <label>
-                                            XL
-                                            <input type="radio" name="size" value="xl">
-                                        </label>
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    الالوان المتاحة :
-                                    <br>
-                                    <div class="product-option color-option" style="background-color: orange;">
-                                        <label>&nbsp
-                                            <input type="radio" name="color" value="orang">
-                                        </label>
-                                    </div>
-                                    <div class="product-option color-option" style="background-color: red;">
-                                        <label>&nbsp
-                                            <input type="radio" name="color" value="red">
-                                        </label>
-                                    </div>
-                                    <div class="product-option color-option" style="background-color: purple;">
-                                        <label>&nbsp
-                                            <input type="radio" name="color" value="purple">
-                                        </label>
-                                    </div>
-                                    <div class="product-option color-option active" style="background-color: blue;">
-                                        <label>&nbsp
-                                            <input type="radio" name="color" value="blue" checked>
-                                        </label>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="product-qounatity">
-                                <div>
-                                    العدد المطلوب :
-                                    <select name="qounatity" class="custom-form-control">
-                                        <option value="1">1</option>
-                                        <option value="2">2</option>
-                                        <option value="3">3</option>
-                                    </select>
-                                </div>
-                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="comment d-flex">
+                            <img src="./images/reviewer_2.jpg" alt="reviewer_2">
                             <div>
-                                <button type="submit" class="btn custom-btn-warning custom-btn-with-icon">
-                                    <span>
-                                        إضافة لعربة الشراء
-                                        <i class="fas fa-cart-plus"></i>
-                                    </span>
-                                </button>
-
+                                <h4>
+                                    اروى صلاح
+                                </h4>
+                                <div class="rating">
+                                    <i class="fa-solid fa-star active"></i>
+                                    <i class="fa-solid fa-star active"></i>
+                                    <i class="fa-solid fa-star active"></i>
+                                    <i class="fa-solid fa-star active"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                </div>
+                                <p>
+                                    اعجبني وخصوصاً نعومة القماش
+                                </p>
                             </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--نهاية قسم التعليقات المنتج -->
+            <!-- قسم المنتجات المقترحه -->
+            <div class="row suggestion">
+                <h3 class="heading">
+                    اقترحنا لك
+                </h3>
+                <div class="row">
+                    <div class="col-lg-3 col-md-4 mb-3">
+                        <div class="card custom-thumbnail">
+                            <div class="overlay">
+                                <button class=" btn add-to-cart-btn">
+                                    إضافة الى العربة
+                                    <i class="fa-solid fa-cart-shopping"></i>
+                                </button>
+                            </div>
+                            <img src="./images/most_sold_1.jpg" alt="فلورا تي شيرت">
+                            <div class="card-body p-2">
+                                <div class="clearfix mt-3">
+                                    <h4 class="float-start">فلورا تي شيرت</h4>
+                                    <div class="price float-end">200$</div>
+                                </div>
+                                <div class="rating">
+                                    <i class="fa-solid fa-star active"></i>
+                                    <i class="fa-solid fa-star active"></i>
+                                    <i class="fa-solid fa-star active"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                </div>
+                                <button class=" btn add-to-cart-btn d-block d-lg-none">
+                                    إضافة الى العربة
+                                    <i class="fa-solid fa-cart-shopping"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 mb-3">
+                        <div class="card custom-thumbnail">
+                            <div class="overlay">
+                                <button class=" btn add-to-cart-btn">
+                                    إضافة الى العربة
+                                    <i class="fa-solid fa-cart-shopping"></i>
+                                </button>
+                            </div>
+                            <img src="./images/most_sold_1.jpg" alt="فلورا تي شيرت">
+                            <div class="card-body p-2">
+                                <div class="clearfix mt-3">
+                                    <h4 class="float-start">فلورا تي شيرت</h4>
+                                    <div class="price float-end">200$</div>
+                                </div>
+                                <div class="rating">
+                                    <i class="fa-solid fa-star active"></i>
+                                    <i class="fa-solid fa-star active"></i>
+                                    <i class="fa-solid fa-star active"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                </div>
+                                <button class=" btn add-to-cart-btn d-block d-lg-none">
+                                    إضافة الى العربة
+                                    <i class="fa-solid fa-cart-shopping"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 mb-3">
+                        <div class="card custom-thumbnail">
+                            <div class="sale">50%</div>
+                            <div class="overlay">
+                                <button class=" btn add-to-cart-btn">
+                                    إضافة الى العربة
+                                    <i class="fa-solid fa-cart-shopping"></i>
+                                </button>
+                            </div>
+                            <img src="./images/most_sold_1.jpg" alt="فلورا تي شيرت">
+                            <div class="card-body p-2">
+                                <div class="clearfix mt-3">
+                                    <h4 class="float-start">فلورا تي شيرت</h4>
+                                    <div class="price float-end">200$</div>
+                                </div>
+                                <div class="rating">
+                                    <i class="fa-solid fa-star active"></i>
+                                    <i class="fa-solid fa-star active"></i>
+                                    <i class="fa-solid fa-star active"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                </div>
+                                <button class=" btn add-to-cart-btn d-block d-lg-none">
+                                    إضافة الى العربة
+                                    <i class="fa-solid fa-cart-shopping"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 d-none d-lg-block mb-3">
+                        <div class="card custom-thumbnail">
+                            <div class="overlay">
+                                <button class=" btn add-to-cart-btn">
+                                    إضافة الى العربة
+                                    <i class="fa-solid fa-cart-shopping"></i>
+                                </button>
+                            </div>
+                            <img src="./images/most_sold_1.jpg" alt="فلورا تي شيرت">
+                            <div class="card-body p-2">
+                                <div class="clearfix mt-3">
+                                    <h4 class="float-start">فلورا تي شيرت</h4>
+                                    <div class="price float-end">200$</div>
+                                </div>
+                                <div class="rating">
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                </div>
+                                <button class=" btn add-to-cart-btn d-block d-lg-none">
+                                    إضافة الى العربة
+                                    <i class="fa-solid fa-cart-shopping"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--نهاية قسم المنتجات المقترحه -->
+
+        </div>
+        <!-- ذيل الصفحة-->
+        <footer class="row">
+            <div id="brand-logo" class="text-center">
+                <span>المتجر وكيل معتمد لكبرى الشركات العالمية</span>
+                <div class="img-container">
+                    <img src="./images/adidas.png" alt="adidas">
+                    <img src="./images/lacoste.png" alt="lacoste">
+                    <img src="./images/puma.png" alt="puma">
+                    <img src="./images/polo.png" alt="polo">
+
+                </div>
+            </div>
+            <div id="footer-nav" class="text-center">
+                <div class="footer-logo">
+                    <a href="./">
+                        <img src="./images/logo_footer.png" alt="logo">
+                    </a>
+                </div>
+                <div class="footer-nav-links d-none d-md-block">
+                    <a href="./index.html">الصفحة الرئيسية</a>
+                    <a href="./index.html">البحث المتقدم</a>
+                    <a href="./index.html">تواصل معنا</a>
+                </div>
+                <div class="news-letter col-md-6 offset-md-3 d-flex align-items-center justify-content-center">
+                    <form>
+                        <label for="footer-input">تابع النشرة البريدية لأحدث العروض</label>
+                        <br>
+                        <div class="input-group">
+                            <input type="email" name="email" id="footer-input" class="form-control custom-form-control"
+                                placeholder="البريد الالكتروني">
+                            <button type="submit" class="btn custom-btn-warning">متابعة</button>
                         </div>
                     </form>
                 </div>
             </div>
-        </div>
+            <div id="footer-copyright-social">
+                <div class="container">
+                    <div class="clearfix">
+                        <div id="copyright" class="float-start">
 
+                        </div>
+                        <div id="social-icon" class="float-end">
+                            <a href="./">
+                                <i class="fa-brands fa-square-facebook fa-lg"></i>
+                            </a>
+                            <a href="./">
+                                <i class="fa-brands fa-square-twitter fa-lg"></i>
+                            </a>
+                            <a href="./">
+                                <i class="fa-brands fa-square-instagram fa-lg"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer> 
+        <!--  نهاية ذيل الصفحة-->
     </div>
 
     <script src="./index.js"></script>
