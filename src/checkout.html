@@ -113,7 +113,7 @@
         <!-- نهاية القائمة الفرعية -->
 
         <div class="row">
-            <h1 class="heading">عربة الشراء</h1>
+            <h1 class="heading custom-heading">عربة الشراء</h1>
             <form action="./payment" class="form-checkout">
                 <table class="custom-table">
                     <thead>
@@ -126,7 +126,7 @@
                         </tr>
                     </thead>
                     <tbody>
-                        <tr>
+                        <tr data-product-info data-product-price="500">
                             <td>
                                 <div class="custom-media d-flex">
                                     <img src="./images/adidas_3.jpg" alt="adidas">
@@ -140,7 +140,7 @@
                             </td>
                             <td>500$</td>
                             <td>
-                                <select name="product1" class="custom-form-control qunatity">
+                                <select name="product1" class="custom-form-control qunatity" data-product-quantity>
                                     <option value="1">1</option>
                                     <option value="2">2</option>
                                     <option value="3" selected>3</option>
@@ -155,7 +155,7 @@
                                 </button>
                             </td>
                         </tr>
-                        <tr>
+                        <tr data-product-info data-product-price="200">
                             <td>
                                 <div class="custom-media d-flex">
                                     <img src="./images/adidas_4.jpg" alt="adidas">
@@ -167,15 +167,15 @@
                                     </div>
                                 </div>
                             </td>
-                            <td> 400$ </td>
+                            <td> 200$ </td>
                             <td>
-                                <select name="product1" class="custom-form-control qunatity">
+                                <select name="product1" class="custom-form-control qunatity" data-product-quantity>
                                     <option value="1">1</option>
                                     <option value="2" selected>2</option>
                                     <option value="3">3</option>
                                 </select>
                             </td>
-                            <td class="total-price-for-product">
+                            <td class="total-price-for-product" >
                                 400$
                             </td>
                             <td>
@@ -187,7 +187,7 @@
                     </tbody>
                     <tfoot>
                         <tr>
-                            <td colspan="5" class="total-price">
+                            <td colspan="5" class="total-price custom-text-muted">
                                 <span>السعر الاجمالي لجميع المنتجات</span>
                                 <span id="total-price-for-all-product">1500</span>
                                 <span>دولار</span>

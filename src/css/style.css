@@ -593,6 +593,11 @@ body {
 ------------Checkout Page-------------
 */
 
+h1.custom-heading {
+    font-size: 36px;
+    margin-bottom: 25px;
+}
+
 .custom-media img {
     width: 80px;
     height: 80px;
@@ -628,6 +633,26 @@ body {
 .custom-table td:not(:first-child) {
     text-align: center;
 }
+.custom-table tfoot td{
+    border-bottom: none;
+    font-size: 150%;
+}
+#total-price-for-all-product{
+    color: #000;
+}
+.custom-btn-outline-danger{
+   background-color:  transparent;
+   border-color: #ff3956;
+   color: #ff3956;
+}
+.custom-btn-outline-danger:hover{
+    border-color: #b9001b;
+    color: #b9001b;
+ }
+
+
+
+
 
 
 
