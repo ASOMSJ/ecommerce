@@ -111,6 +111,92 @@
             </div>
         </div>
         <!-- نهاية القائمة الفرعية -->
+
+        <div class="row">
+            <h1 class="heading">عربة الشراء</h1>
+            <form action="./payment" class="form-checkout">
+                <table class="custom-table">
+                    <thead>
+                        <tr>
+                            <th>المنتج</th>
+                            <th>السعر</th>
+                            <th>العدد المطلوب</th>
+                            <th>السعر الاجمالي</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>
+                                <div class="custom-media d-flex">
+                                    <img src="./images/adidas_3.jpg" alt="adidas">
+                                    <div>
+                                        <h4>تي شيرت رجالي من لاكوست</h4>
+                                        <div class="custom-text-muted">
+                                            ملابس رجالي
+                                        </div>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>500$</td>
+                            <td>
+                                <select name="product1" class="custom-form-control qunatity">
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3" selected>3</option>
+                                </select>
+                            </td>
+                            <td class="total-price-for-product">
+                                1500$
+                            </td>
+                            <td>
+                                <button class="btn custom-btn-outline-danger">
+                                    حذف
+                                </button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="custom-media d-flex">
+                                    <img src="./images/adidas_4.jpg" alt="adidas">
+                                    <div>
+                                        <h4>تي شيرت رجالي من لاكوست</h4>
+                                        <div class="custom-text-muted">
+                                            ملابس رجالي
+                                        </div>
+                                    </div>
+                                </div>
+                            </td>
+                            <td> 400$ </td>
+                            <td>
+                                <select name="product1" class="custom-form-control qunatity">
+                                    <option value="1">1</option>
+                                    <option value="2" selected>2</option>
+                                    <option value="3">3</option>
+                                </select>
+                            </td>
+                            <td class="total-price-for-product">
+                                400$
+                            </td>
+                            <td>
+                                <button class="btn custom-btn-outline-danger">
+                                    حذف
+                                </button>
+                            </td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <td colspan="5" class="total-price">
+                                <span>السعر الاجمالي لجميع المنتجات</span>
+                                <span id="total-price-for-all-product">1500</span>
+                                <span>دولار</span>
+                            </td>
+                        </tr>
+                    </tfoot>
+                </table>
+            </form>
+        </div>
     </div>
 
     <!-- ذيل الصفحة-->

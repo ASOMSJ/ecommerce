@@ -589,6 +589,46 @@ body {
     margin-bottom: 5px;
 }
 
+/*
+------------Checkout Page-------------
+*/
+
+.custom-media img {
+    width: 80px;
+    height: 80px;
+    border: 1px solid #ebebeb;
+    margin-left: 10px;
+}
+
+.custom-table th,
+.custom-table td {
+    padding: 15px;
+    font-size: 120%;
+    vertical-align: middle;
+    border-top: 1px solid #ebebeb;
+    border-bottom: 1px solid #ebebeb;
+}
+
+.custom-table h4 {
+    font-size: 18px;
+    margin: 12px 0;
+}
+
+.custom-table th {
+    color: #c2c2c2;
+    font-weight: normal;
+}
+
+.custom-table th:first-child,
+.custom-table td:first-child {
+    width: 50%;
+}
+
+.custom-table th:not(:first-child),
+.custom-table td:not(:first-child) {
+    text-align: center;
+}
+
 
 
 @media (max-width: 1399.98px) {}
