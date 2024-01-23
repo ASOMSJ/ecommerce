@@ -66,7 +66,38 @@ function calculateTotalPrice() {
     document.getElementById('total-price-for-all-product').innerHTML = totalPriceForAllProduct + '$'
 }
 
+const citiesByCountry = {
+    sa: ['الرياض', 'جدة'],
+    eg: ['القاهرة', 'الاسكندرية'],
+    jo: ['عمان', 'الزرقاء'],
+    sy: ['دمشق', 'حلب', 'حماه']
+}
 
+document.querySelectorAll('select[name="country"]').forEach(item => {
+    item.addEventListener('change', () => {
+        const country = item.value
+        const cities = citiesByCountry[country]
+        document.querySelectorAll('#paymentcities option').forEach(option => option.remove())
 
+        const firstOption = document.createElement('option')
+        const optionText = document.createTextNode('اختر مدينة')
+        firstOption.appendChild(optionText)
+        firstOption.setAttribute('value', '')
+        firstOption.setAttribute('disabled', 'true')
+        firstOption.setAttribute('selected', 'true')
+
+        const citise_options = document.getElementById('paymentcities')
+        citise_options.appendChild(firstOption)
+
+        cities.forEach(city => {
+            const newOption = document.createElement('option')
+            const optionNewText = document.createTextNode(city)
+            newOption.appendChild(optionNewText)
+            newOption.setAttribute('value',city)
+            citise_options.appendChild(newOption)
+        })
+
+    })
+})
 document.getElementById("copyright").innerHTML = "جميع الحقوق محفوظة سنة " + new Date().getFullYear();
 
