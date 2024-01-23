@@ -166,6 +166,40 @@
                     </div>
                     <div class="col-lg-6">
                         <h3 class="heading">بياناتك الدفع</h3>
+                        <div class="row mb-4">
+                            <div class="col-md-6">
+                                <label class="font-weight-bold">
+                                    <input type="radio" name="payment-method" value="credit-card" checked>
+                                    البطاقة الإئتمانية
+                                </label>
+                            </div>
+                            <div class="col-md-6">
+                                <label class="font-weight-bold">
+                                    <input type="radio" name="payment-method" value="on-delivery">
+                                    الدفع عند التسليم
+                                </label>
+                            </div>
+                        </div>
+                        <div class="row" id="credit-card-info">
+                            <div class="col-md-6 mb-3">
+                                <input type="text" class="form-control custom-form-control custom-input-details"
+                                    placeholder=" رقم البطاقة" name="credit-card-number" required>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <input type="number" class="form-control custom-form-control custom-input-details"
+                                    placeholder="  شهر الانتهاء" name="credit-card-expiration-month" min="1" max="12"
+                                    required>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <input type="number" class="form-control custom-form-control custom-input-details"
+                                    placeholder="  سنة الانتهاء" name="credit-card-expiration-year" min="2025"
+                                    max="2030" required>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <input type="number" class="form-control custom-form-control custom-input-details"
+                                    placeholder="  CCV " name="credit-card-ccv" required>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </form>

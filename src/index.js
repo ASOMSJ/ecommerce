@@ -99,5 +99,24 @@ document.querySelectorAll('select[name="country"]').forEach(item => {
 
     })
 })
+
+//اخفاء واظهار حقول البطاقة الائتمانية
+document.querySelectorAll('#form-checkout input[name="payment-method"]').forEach(item=>{
+    item.addEventListener('change',()=>{
+        const payment_method=item.value;
+        const credit_card_inputs =document.querySelectorAll('#credit-card-info input');
+        if(payment_method==='on-delivery'){
+            credit_card_inputs.forEach(input=>{
+                input.style.display='none'
+            })
+        }else{
+            credit_card_inputs.forEach(input=>{
+                input.style.display='block'
+            })
+        }
+
+    })
+})
+
 document.getElementById("copyright").innerHTML = "جميع الحقوق محفوظة سنة " + new Date().getFullYear();
 
