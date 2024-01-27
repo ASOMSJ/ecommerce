@@ -727,8 +727,45 @@ form#advancsd-search label {
     border-color: #f8ad47 !important;
 }
 
+/*
+--------------------contact-us page-----------------
+*/
+.contact-info {
+    padding: 20px;
+    margin-bottom: 10px;
+}
 
+.contact-info h4.custom-heading {
+    font-size: 140%;
+    padding: 10px 0;
+    border-bottom: 1px solid #ebebeb;
+}
 
+.contact-info ul {
+    list-style: none;
+    padding: 0;
+}
+
+.contact-info ul li {
+    color: #f8ad47;
+    margin-bottom: 10px;
+   
+}
+.contact-info ul li span{
+    color: #555;
+    margin: 5px;
+}
+.contact-form{
+    padding: 20px;
+}
+.contact-form h4{
+    font-size: 140%;
+    padding: 10px 0 0;
+}
+
+.contact-form form textarea{
+    height: 80px !important;
+}
 
 
 @media (max-width: 1399.98px) {}
@@ -842,13 +879,20 @@ form#advancsd-search label {
         font-size: 20px;
         padding: 0;
     }
-    .search-pagination{
+
+    .search-pagination {
         display: flex;
         justify-content: center;
         align-items: center;
     }
+
 }
 
+@media (min-width: 767.99px) and (max-width: 991.98px) {
+    .custom-offset {
+        margin-right: 16%;
+    }
+}
 
 @media (max-width: 767.98px) {
     #carousel-featured {

@@ -98,9 +98,15 @@ module.exports = {
             template: "./src/search.html",
 
         }),
+        new HtmlWebpackPlugin({
+            filename: "contact-us.html",
+            template: "./src/contact-us.html",
+
+        }),
         new MiniCssExtractPlugin({
             filename: "css/style.css",
         }),
+        
         new CssMinimizerPlugin()
     ],
 };
