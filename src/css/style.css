@@ -292,11 +292,7 @@ body {
     opacity: 1;
 }
 
-.add-to-cart-btn {
-    background-color: #fff;
-    color: #53ccd7;
-    font-weight: 700;
-}
+
 
 .custom-thumbnail .sale {
     padding: 5px 10px;
@@ -415,21 +411,7 @@ body {
     height: 38px;
 }
 
-.custom-btn-warning {
-    color: #000;
-    background-color: #f8ad47;
-    border-color: #f8ad47;
-}
 
-.custom-btn-warning:hover,
-.custom-btn-warning:active,
-.custom-btn-warning:focus,
-.custom-btn-warning:active:focus,
-.custom-btn-warning:active:hover {
-    background-color: #b86d07;
-    color: #b86d07;
-    color: #000;
-}
 
 .news-letter form button {
     border-radius: 0;
@@ -643,16 +625,7 @@ h1.custom-heading {
     color: #000;
 }
 
-.custom-btn-outline-danger {
-    background-color: transparent;
-    border-color: #ff3956;
-    color: #ff3956;
-}
 
-.custom-btn-outline-danger:hover {
-    border-color: #b9001b;
-    color: #b9001b;
-}
 
 /*
 ------------Payment Page-------------
