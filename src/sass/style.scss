@@ -1,7 +1,7 @@
 
 @import './variable';
-
-
+@import './custom_table';
+@import './mixins';
 
 
 .custom-form-control,
@@ -30,20 +30,11 @@
     color: $brand-danger;
 }
 
-
-.custom-btn-outline-warning {
-    background-color: transparent;
-    border-color: $brand-warning;
-    color: $brand-warning;
+.custom-btn-outline-warning{
+    @include button-style($brand-warning);
 }
-
-.custom-btn-outline-warning:hover,
-.custom-btn-outline-warning:active,
-.custom-btn-outline-warning:focus,
-.custom-btn-outline-warning:active:focus,
-.custom-btn-outline-warning:active:hover {
-    border-color: $btn-warning-color-dark;
-    color: $btn-warning-color-dark;
+.custom-btn-outline-danger{
+    @include button-style($brand-danger);
 }
 
 .custom-btn-warning {
@@ -61,16 +52,7 @@
     color: $btn-warning-color-dark;
     color: #000;
 }
-.custom-btn-outline-danger {
-    background-color: transparent;
-    border-color: $brand-danger;
-    color: $brand-danger;
-}
 
-.custom-btn-outline-danger:hover {
-    border-color: #b9001b;
-    color: #b9001b;
-}
 
 .add-to-cart-btn {
     background-color: #fff;
