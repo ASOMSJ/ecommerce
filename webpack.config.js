@@ -34,7 +34,7 @@ module.exports = {
             },
             {
                 test: /\.(sa|sc|c)ss$/i,
-                exclude: /bootstrap\.min\.css$/i,
+                exclude: /custom\.scss$/i,
                 use: [
                     {
                         loader: MiniCssExtractPlugin.loader,
@@ -47,7 +47,7 @@ module.exports = {
                 ],
             },
             {
-                test: /bootstrap\.min\.css$/i,
+                test: /custom\.scss$/i,
                 use: [
                     {
                         loader: MiniCssExtractPlugin.loader,
@@ -55,7 +55,8 @@ module.exports = {
                             esModule: false,
                         },
                     },
-                    'rtlcss-loader'],
+                    'rtlcss-loader','sass-loader',
+                ],
             },
             {
                 test: /\.(png|svg|jpg|jpeg|gif)$/i,
@@ -108,7 +109,7 @@ module.exports = {
         new MiniCssExtractPlugin({
             filename: "css/style.css",
         }),
-        
+
         new CssMinimizerPlugin()
     ],
 };

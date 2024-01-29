@@ -243,26 +243,7 @@ body {
     margin-bottom: 25px;
 }
 
-.custom-thumbnail img {
-    max-height: 250px;
-    width: 100%;
-    max-width: 250px;
-}
 
-.custom-thumbnail {
-    border: 2px solid #eef0ea;
-    padding: 8px;
-    cursor: pointer;
-}
-
-.custom-thumbnail:hover {
-    border-color: #53ccd7;
-}
-
-.custom-thumbnail h4 {
-    font-size: 18px;
-
-}
 
 .price {
     color: #53ccd7;
@@ -292,18 +273,6 @@ body {
     opacity: 1;
 }
 
-
-
-.custom-thumbnail .sale {
-    padding: 5px 10px;
-    position: absolute;
-    top: 14px;
-    left: 16px;
-}
-
-.custom-thumbnail .sale::before {
-    content: "-";
-}
 
 .custom-carousel-indicators2 {
     bottom: -70px;
@@ -788,9 +757,7 @@ form#advancsd-search label {
         margin: 8px auto 0;
     }
 
-    .custom-thumbnail img {
-        height: 200px;
-    }
+    
 
     #row-brands .carousel-inner img {
         width: 200px !important;
@@ -854,10 +821,7 @@ form#advancsd-search label {
         height: 250px;
     }
 
-    .custom-thumbnail img {
-        height: 250px;
-        margin: auto;
-    }
+   
 
     #brand-logo img {
         max-width: 50px;
